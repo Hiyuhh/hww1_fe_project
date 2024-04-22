@@ -1,0 +1,131 @@
+
+body {
+    display: flex;
+    box-sizing: inherit;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 90px;
+    margin-top: 60px;
+    background-color: rgb(243, 243, 243);
+}
+
+html {
+    position: relative;
+}
+
+/*----------------- FONTS ----------------- */
+
+@font-face {
+    font-family: Petrov Sans Bold;
+    src: url("./fonts/PetrovSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: Louis George;
+    src: url("./fonts/LouisGeorgeCafeBold.ttf");
+}
+
+/*----------------- FONTS ----------------- */
+
+
+/* ----------------- NAV ------------- */
+nav {
+    display: flex;
+    width: 100vw;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: Petrov Sans Bold;
+    background-color: rgb(243, 243, 243);
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+    color: rgb(19, 19, 19);
+    font-size: 18px !important;
+}
+
+nav a::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width:0;
+    height: 1px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,.9);
+    transition: width .4s ease-in;
+}
+
+nav a:hover::before {
+    width: 100%
+}
+
+/* ----------------- NAV ------------- */
+
+
+/* ----------------- HEADER ------------- */
+
+header {
+    display: flex;
+    width: 100vw;
+    font-family: Louis George;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    color: rgb(31, 31, 31);
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+/* ----------------- HEADER ------------- */
+
+
+/* ----------------- FOOTER --------------- */
+
+footer {
+    display: flex;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    font-family: Petrov Sans Bold;
+    background-color: rgb(243, 243, 243);
+}
+
+footer a {
+    text-decoration: none;
+    position: relative;
+    color: rgb(19, 19, 19);
+    font-size: 18px !important;
+}
+
+footer a::before {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: rgb(19, 19, 19);
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,.9);
+    transition: width .4s ease-in;
+}
+
+footer a:hover::before {
+    width: 100%;
+}
+
+/* ----------------- FOOTER --------------- */

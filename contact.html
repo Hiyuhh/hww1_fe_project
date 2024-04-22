@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get In Touch</title>
+    <link rel="stylesheet" href="./static/contact.css">
+
+</head>
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+    </nav>
+
+    <header>
+        <h1>Get In Touch</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <form action="contact.html"> <!--method="POST">-->
+            <label for="name">Name:</label>
+            <br>
+            <input type="text" id="name" name="name" required>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="subject">Subject:</label>
+            <br>
+            <input type="text" id="subject" name="subject" required>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" required></textarea>
+            <div role="alert" aria-live="assertive"></div>
+            <br>
+
+            <button type="submit" aria-label = "submit"> Submit </button>
+
+        </form>
+    </main>
+
+    <footer>
+        <a href="contact.html">Contact Me</a>
+        <a href="about.html">About</a> 
+    </footer>
+
+</body>
+</html>
